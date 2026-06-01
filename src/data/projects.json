@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "violets-and-vibes",
+    "name": "Violets & Vibes",
+    "description": "A waitlist-driven lifestyle brand with animated UI, share mechanics, and email confirmations via Supabase Edge Functions.",
+    "tags": ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
+    "url": "https://violetsandvibes.com",
+    "featured": true
+  },
+  {
+    "slug": "chavacodes4u",
+    "name": "chavacodes4u.com",
+    "description": "My personal portfolio and blog — built with Next.js, Tailwind CSS, and deployed on Vercel.",
+    "tags": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "url": "https://chavacodes4u.com",
+    "featured": true
+  },
+  {
+    "slug": "project-three",
+    "name": "Coming Soon",
+    "description": "Something new is in the works. Stay tuned.",
+    "tags": ["React", "TypeScript"],
+    "url": "#",
+    "featured": false
+  }
+]
