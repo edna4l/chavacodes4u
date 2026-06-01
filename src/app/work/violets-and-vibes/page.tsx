@@ -92,11 +92,61 @@ export default function VioletsAndVibes() {
           </p>
         </div>
 
-        {/* Remaining placeholders */}
-        <div className="grid sm:grid-cols-2 gap-4">
-          <ImagePlaceholder label="Waitlist page screenshot" />
-          <ImagePlaceholder label="Brand visual / AI concept" />
-          <ImagePlaceholder label="Social content sample" />
+        {/* Brand kit */}
+        <div className="space-y-3">
+          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+            Brand Identity / Design System
+          </p>
+          <img
+            src="/work/violets-and-vibes-brand-kit.png"
+            alt="Violets & Vibes brand kit"
+            className="w-full rounded-2xl border border-gray-100 shadow-sm"
+          />
+          <p className="text-sm text-gray-500 leading-relaxed">
+            Developed the full brand system — color palette, typography, UI components,
+            and AI visual concept direction.{" "}
+            <span className="text-gray-700 font-medium">
+              This proves: visual direction, brand consistency, design thinking.
+            </span>
+          </p>
+        </div>
+
+        {/* App UI */}
+        <div className="space-y-3">
+          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+            App UI / Product Concept
+          </p>
+          <img
+            src="/work/violets-and-vibes-app-ui.png"
+            alt="Violets & Vibes app UI"
+            className="w-full rounded-2xl border border-gray-100 shadow-sm"
+          />
+          <p className="text-sm text-gray-500 leading-relaxed">
+            Designed the core community feed experience — connection categories, vibe
+            posting, and safety-first navigation.{" "}
+            <span className="text-gray-700 font-medium">
+              This proves: product thinking, UX flow, feature planning.
+            </span>
+          </p>
+        </div>
+
+        {/* Waitlist */}
+        <div className="space-y-3">
+          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+            Waitlist / Founding Circle Signup
+          </p>
+          <img
+            src="/work/violets-and-vibes-waitlist.png"
+            alt="Violets & Vibes waitlist page"
+            className="w-full rounded-2xl border border-gray-100 shadow-sm"
+          />
+          <p className="text-sm text-gray-500 leading-relaxed">
+            Built the founding member signup flow with community values, interest
+            segmentation, and launch incentives.{" "}
+            <span className="text-gray-700 font-medium">
+              This proves: launch strategy, copywriting, conversion thinking.
+            </span>
+          </p>
         </div>
       </section>
 
