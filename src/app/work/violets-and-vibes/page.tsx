@@ -70,10 +70,30 @@ export default function VioletsAndVibes() {
       </section>
 
       {/* Screenshots */}
-      <section className="space-y-4">
+      <section className="space-y-8">
         <h2 className="text-xl font-bold text-gray-900">Screenshots</h2>
+
+        {/* Homepage screenshot */}
+        <div className="space-y-3">
+          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+            Homepage / Brand Positioning
+          </p>
+          <img
+            src="/work/violets-and-vibes-homepage.png"
+            alt="Violets & Vibes homepage"
+            className="w-full rounded-2xl border border-gray-100 shadow-sm"
+          />
+          <p className="text-sm text-gray-500 leading-relaxed">
+            Built a women-centered landing experience that explains the product&apos;s purpose:
+            safer connection for friendship, dating, and community.{" "}
+            <span className="text-gray-700 font-medium">
+              This proves: website design, brand clarity, audience focus.
+            </span>
+          </p>
+        </div>
+
+        {/* Remaining placeholders */}
         <div className="grid sm:grid-cols-2 gap-4">
-          <ImagePlaceholder label="Homepage screenshot" />
           <ImagePlaceholder label="Waitlist page screenshot" />
           <ImagePlaceholder label="Brand visual / AI concept" />
           <ImagePlaceholder label="Social content sample" />
