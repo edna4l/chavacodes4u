@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Violets & Vibes | chavacodes4u",
@@ -25,6 +24,33 @@ const tools = [
   "User experience thinking",
   "Social media content",
   "Visual direction",
+];
+
+const proofCards = [
+  {
+    image: "/work/violets-and-vibes-homepage.png",
+    label: "Homepage / Brand Positioning",
+    text: "Designed the first impression of the brand with soft, inclusive messaging around safer connection, friendship, dating, and community.",
+    skills: ["Website planning", "Brand messaging", "Copywriting"],
+  },
+  {
+    image: "/work/violets-and-vibes-waitlist.png",
+    label: "Signup / Early Access Flow",
+    text: "Created a clear path for early users to enter the community, with copy focused on trust, belonging, and low-pressure connection.",
+    skills: ["User flow", "Launch strategy", "Conversion copy"],
+  },
+  {
+    image: "/work/violets-and-vibes-app-ui.png",
+    label: "Community Feature Design",
+    text: "Built and planned product areas for profiles, social discovery, chats, alerts, and connection-based community interactions.",
+    skills: ["UX thinking", "Product strategy", "Feature planning"],
+  },
+  {
+    image: "/work/violets-and-vibes-brand-kit.png",
+    label: "AI Visual Direction / Launch Content",
+    text: "Created AI-assisted visual concepts and social content ideas to communicate the emotional purpose of the brand before launch.",
+    skills: ["AI prompting", "Visual direction", "Social media content"],
+  },
 ];
 
 export default function VioletsAndVibes() {
@@ -69,84 +95,44 @@ export default function VioletsAndVibes() {
         </ul>
       </section>
 
-      {/* Screenshots */}
-      <section className="space-y-8">
-        <h2 className="text-xl font-bold text-gray-900">Screenshots</h2>
-
-        {/* Homepage screenshot */}
-        <div className="space-y-3">
-          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
-            Homepage / Brand Positioning
-          </p>
-          <img
-            src="/work/violets-and-vibes-homepage.png"
-            alt="Violets & Vibes homepage"
-            className="w-full rounded-2xl border border-gray-100 shadow-sm"
-          />
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Built a women-centered landing experience that explains the product&apos;s purpose:
-            safer connection for friendship, dating, and community.{" "}
-            <span className="text-gray-700 font-medium">
-              This proves: website design, brand clarity, audience focus.
-            </span>
-          </p>
-        </div>
-
-        {/* Brand kit */}
-        <div className="space-y-3">
-          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
-            Brand Identity / Design System
-          </p>
-          <img
-            src="/work/violets-and-vibes-brand-kit.png"
-            alt="Violets & Vibes brand kit"
-            className="w-full rounded-2xl border border-gray-100 shadow-sm"
-          />
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Developed the full brand system — color palette, typography, UI components,
-            and AI visual concept direction.{" "}
-            <span className="text-gray-700 font-medium">
-              This proves: visual direction, brand consistency, design thinking.
-            </span>
-          </p>
-        </div>
-
-        {/* App UI */}
-        <div className="space-y-3">
-          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
-            App UI / Product Concept
-          </p>
-          <img
-            src="/work/violets-and-vibes-app-ui.png"
-            alt="Violets & Vibes app UI"
-            className="w-full rounded-2xl border border-gray-100 shadow-sm"
-          />
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Designed the core community feed experience — connection categories, vibe
-            posting, and safety-first navigation.{" "}
-            <span className="text-gray-700 font-medium">
-              This proves: product thinking, UX flow, feature planning.
-            </span>
-          </p>
-        </div>
-
-        {/* Waitlist */}
-        <div className="space-y-3">
-          <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
-            Waitlist / Founding Circle Signup
-          </p>
-          <img
-            src="/work/violets-and-vibes-waitlist.png"
-            alt="Violets & Vibes waitlist page"
-            className="w-full rounded-2xl border border-gray-100 shadow-sm"
-          />
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Built the founding member signup flow with community values, interest
-            segmentation, and launch incentives.{" "}
-            <span className="text-gray-700 font-medium">
-              This proves: launch strategy, copywriting, conversion thinking.
-            </span>
-          </p>
+      {/* Project Proof */}
+      <section className="space-y-6">
+        <h2 className="text-xl font-bold text-gray-900">What I Built</h2>
+        <p className="text-gray-600 leading-relaxed">
+          Violets &amp; Vibes is a founder-built community platform designed to help
+          women-centered users connect through friendship, dating, social posts, chats,
+          and safer community features. This project shows my ability to move from idea
+          to product structure, brand messaging, AI-assisted visuals, and launch content.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {proofCards.map((card) => (
+            <div
+              key={card.label}
+              className="rounded-2xl border border-gray-100 overflow-hidden hover:border-indigo-200 hover:shadow-sm transition-all"
+            >
+              <img
+                src={card.image}
+                alt={card.label}
+                className="w-full object-cover"
+              />
+              <div className="p-5 space-y-3">
+                <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+                  {card.label}
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed">{card.text}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {card.skills.map((s) => (
+                    <span
+                      key={s}
+                      className="text-xs px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-600 font-medium"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -169,21 +155,36 @@ export default function VioletsAndVibes() {
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-gray-900">What I Learned</h2>
         <p className="text-gray-600 leading-relaxed">
-          This project taught me how to move from an idea to a real product structure —
-          including audience research, user flow thinking, safety feature planning, landing
-          page messaging, and launch content. I learned that the positioning of a product
-          is just as important as the product itself.
+          This project taught me how to turn a broad idea into a real product experience.
+          I learned how to think through audience needs, safety features, onboarding, page
+          structure, social content, and brand positioning. I also learned that building the
+          product is only one part of the work — explaining the value clearly is just as
+          important.
         </p>
       </section>
 
-      {/* What I'd improve */}
-      <section className="space-y-3 pb-4">
+      {/* Improve */}
+      <section className="space-y-3">
         <h2 className="text-xl font-bold text-gray-900">What I Would Improve Next</h2>
         <p className="text-gray-600 leading-relaxed">
-          Next, I would test the landing page with 10 target users, simplify the signup
-          flow, and create a stronger first-week onboarding experience that shows new
-          members exactly what to do and why the community is worth staying in.
+          Next, I would test the site with a small group of target users, simplify the
+          signup flow, strengthen the first-week onboarding experience, and create clearer
+          calls to action for joining the waitlist or community.
         </p>
+      </section>
+
+      {/* Why This Project Matters */}
+      <section className="space-y-3 pb-4">
+        <h2 className="text-xl font-bold text-gray-900">Why This Project Matters</h2>
+        <div className="pl-5 border-l-4 border-indigo-200">
+          <p className="text-gray-600 leading-relaxed">
+            Violets &amp; Vibes shows that I can take an idea from concept to something real:
+            a working brand, product direction, website experience, social content strategy,
+            and community-focused launch plan. It also reflects the kind of work I want to
+            do for others — helping people turn meaningful ideas into clear digital
+            experiences.
+          </p>
+        </div>
       </section>
     </CaseStudyLayout>
   );
