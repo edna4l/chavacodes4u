@@ -4,23 +4,26 @@ import CaseStudyLayout from "@/components/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "MyFormsVault | chavacodes4u",
-  description: "Chrome extension concept for saving reusable personal form information locally.",
+  description: "Full-stack web app and Chrome extension for importing, organizing, and autofilling repeated forms.",
 };
 
 const created = [
-  "Product concept, naming, and positioning",
-  "Landing page copy and value proposition",
-  "Chrome extension flow mapping",
-  "Target audience definition and research",
-  "Privacy-first messaging strategy",
+  "Full-stack web app built with Next.js, Supabase, and Prisma",
+  "Chrome extension with household-aware autofill",
+  "Landing page copy, positioning, and visual design",
+  "OCR-backed form import pipeline",
+  "API key system for secure extension authentication",
+  "Household vault for storing reusable family data",
 ];
 
 const tools = [
-  "Product thinking",
-  "Copywriting",
-  "Chrome extension research",
-  "Landing page messaging",
-  "Privacy-first design thinking",
+  "Next.js / React",
+  "Supabase (auth + database)",
+  "Prisma ORM",
+  "Chrome Extension (MV3)",
+  "TypeScript",
+  "Vercel deployment",
+  "Copywriting & product messaging",
 ];
 
 export default function MyFormsVault() {
@@ -35,11 +38,10 @@ export default function MyFormsVault() {
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-gray-900">The Problem</h2>
         <p className="text-gray-600 leading-relaxed">
-          People refill the same forms over and over — name, address, phone number,
-          email — across dozens of websites every month. It&apos;s tedious, error-prone,
-          and nobody&apos;s solved it in a way that feels safe. Browser autofill is
-          unreliable. Password managers aren&apos;t built for this. And most people don&apos;t
-          want their personal data stored on someone else&apos;s server.
+          Families, school offices, and care teams fill out the same forms over and over —
+          name, address, medical details, emergency contacts — every season, every year.
+          There was no good way to import outside forms, store reusable household records,
+          and autofill the next one without starting from scratch every time.
         </p>
       </section>
 
@@ -47,16 +49,16 @@ export default function MyFormsVault() {
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-gray-900">The Goal</h2>
         <p className="text-gray-600 leading-relaxed">
-          Create a simple browser extension concept that stores reusable personal
-          information locally — never in the cloud — so users can fill forms faster
-          without giving their data to a third party. Privacy-first, no account needed,
-          no sync.
+          Build a live product that lets users import any form, store reusable household
+          profiles in a family vault, publish public forms with household-aware autofill,
+          and extend that workflow into the browser through a Chrome extension — all from
+          one dashboard.
         </p>
       </section>
 
       {/* What I created */}
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-gray-900">What I Created</h2>
+        <h2 className="text-xl font-bold text-gray-900">What I Built</h2>
         <ul className="space-y-2.5">
           {created.map((item) => (
             <li key={item} className="flex items-start gap-3 text-gray-600">
@@ -70,25 +72,29 @@ export default function MyFormsVault() {
       {/* Screenshots */}
       <section className="space-y-4">
         <h2 className="text-xl font-bold text-gray-900">Screenshots</h2>
-        <div className="grid sm:grid-cols-2 gap-4 items-start">
-          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm">
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm h-80">
             <Image
               src="/work/myformsvault-landing.png"
               alt="MyFormsVault landing page hero"
               width={600}
               height={900}
-              className="w-full h-auto"
+              className="w-full h-full object-cover object-top"
             />
           </div>
-          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm">
+          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm h-80 bg-slate-100 flex items-center justify-center p-6">
             <Image
               src="/work/myformsvault-extension.png"
               alt="MyFormsVault Chrome extension popup"
-              width={600}
-              height={480}
-              className="w-full h-auto"
+              width={500}
+              height={380}
+              className="w-full h-auto object-contain drop-shadow-xl"
             />
           </div>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 text-xs text-gray-400 text-center">
+          <span>Live landing page — myformsvault.com</span>
+          <span>Chrome extension popup — household autofill</span>
         </div>
       </section>
 
@@ -108,18 +114,19 @@ export default function MyFormsVault() {
       </section>
 
       {/* Label */}
-      <div className="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">
-        Prototype / Concept build
+      <div className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">
+        Live Product
       </div>
 
       {/* Learned */}
       <section className="space-y-3">
         <h2 className="text-xl font-bold text-gray-900">What I Learned</h2>
         <p className="text-gray-600 leading-relaxed">
-          This project taught me how to define a product clearly even before a single
-          line of code is written. I learned how to research an existing problem, position
-          a solution for a skeptical audience that cares about privacy, and write copy
-          that leads with trust instead of features.
+          This project taught me how to ship a real product end-to-end — from database
+          design and server-side auth to Chrome extension APIs and live deployment on
+          Vercel. I learned how to navigate real technical constraints like DNS resolution
+          differences between local and production, Supabase schema permissions, and
+          building a secure API key system from scratch.
         </p>
       </section>
 
@@ -127,9 +134,10 @@ export default function MyFormsVault() {
       <section className="space-y-3 pb-4">
         <h2 className="text-xl font-bold text-gray-900">What I Would Improve Next</h2>
         <p className="text-gray-600 leading-relaxed">
-          Next, I would build a functional MVP, create a waitlist, and test the actual
-          extension with 5–10 early users to see which form fields they actually want
-          to save most. That feedback would shape v1.
+          Next, I would add end-to-end autofill testing with real school and clinic forms,
+          build out the submission review dashboard, and expand the template library with
+          more pre-built household and care workflows. Publishing to the Chrome Web Store
+          is also on the roadmap.
         </p>
       </section>
     </CaseStudyLayout>

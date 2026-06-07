@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "AI Prompt Samples | chavacodes4u",
@@ -64,7 +63,7 @@ export default function AiPromptSamples() {
               </div>
             </div>
             <div className="px-6 pb-6">
-              <ImagePlaceholder label={s.label} />
+              <p className="text-xs text-indigo-500 font-medium">{s.label} — available on request</p>
             </div>
           </div>
         ))}

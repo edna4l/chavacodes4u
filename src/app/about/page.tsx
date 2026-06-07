@@ -70,8 +70,7 @@ export default function About() {
 
         {/* Right: photo placeholder */}
         <div className="space-y-4">
-          <ImagePlaceholder label="Your photo here" />
-          <p className="text-xs text-center text-gray-400">Replace with your headshot</p>
+          <ImagePlaceholder label="Photo coming soon" />
         </div>
       </div>
 
