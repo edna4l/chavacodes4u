@@ -12,19 +12,16 @@ const samples = [
     goal: "Realistic coastal van-life lifestyle photo",
     approach:
       "Cinematic photography, vintage VW camper van at golden hour on the Pacific Coast Highway, couple watching the sunset in camping chairs, 35mm film grain, warm amber light, shallow depth of field, editorial travel magazine style, ultra realistic.",
-    label: "Result: van-life lifestyle photo",
   },
   {
     goal: "Brand-aligned lifestyle visual for Violets & Vibes",
     approach:
       "Soft editorial photography, two women laughing over coffee at an outdoor cafe, warm afternoon light, natural bokeh, floral arrangements on table, feminine and modern lifestyle brand aesthetic, inclusive, safe-feeling community vibe, high fashion editorial.",
-    label: "Result: community lifestyle visual",
   },
   {
     goal: "Emotional animal rescue appeal image",
     approach:
       "Photorealistic image of a scrappy terrier mix sitting alone on a city sidewalk, golden hour backlight creating a halo effect, soft focus background, soulful eyes looking directly at camera, documentary photography style, cinematic composition, heartwarming yet urgent.",
-    label: "Result: rescue emotional appeal photo",
   },
 ];
 
@@ -45,41 +42,35 @@ export default function AiPromptSamples() {
         </p>
       </section>
 
-      {/* Prompt samples */}
-      <section className="space-y-8">
-        <h2 className="text-xl font-bold text-gray-900">Image Prompt Samples</h2>
-        {samples.map((s, i) => (
-          <div key={i} className="rounded-2xl border border-gray-100 overflow-hidden">
-            <div className="p-6 space-y-3">
-              <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
-                Sample {i + 1}
-              </p>
-              <div className="space-y-1.5">
-                <p className="text-sm font-semibold text-gray-700">Goal</p>
-                <p className="text-gray-600 text-sm">{s.goal}</p>
-              </div>
-              <div className="space-y-1.5">
-                <p className="text-sm font-semibold text-gray-700">Prompt approach</p>
-                <p className="text-gray-500 text-sm leading-relaxed italic">&ldquo;{s.approach}&rdquo;</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Generated results */}
+      {/* Results first — more compelling than text alone */}
       <section className="space-y-4">
         <h2 className="text-xl font-bold text-gray-900">Generated Results</h2>
         <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
           <Image
             src="/work/image-prompt-samples.png"
-            alt="AI-generated results for all three prompt samples"
+            alt="AI-generated results: van-life lifestyle, Violets & Vibes community visual, animal rescue appeal"
             width={1200}
             height={800}
             className="w-full h-auto"
           />
         </div>
-        <p className="text-xs text-gray-400">All images generated from the prompts above.</p>
+      </section>
+
+      {/* Prompts as supporting context */}
+      <section className="space-y-6">
+        <h2 className="text-xl font-bold text-gray-900">The Prompts Behind Each Image</h2>
+        <div className="space-y-4">
+          {samples.map((s, i) => (
+            <div key={i} className="p-5 rounded-2xl border border-gray-100 space-y-2">
+              <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
+                Image {i + 1} — {s.goal}
+              </p>
+              <p className="text-gray-500 text-sm leading-relaxed italic">
+                &ldquo;{s.approach}&rdquo;
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="space-y-3 pb-4">
