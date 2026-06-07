@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 
 export const metadata: Metadata = {
@@ -62,11 +63,23 @@ export default function AiPromptSamples() {
                 <p className="text-gray-500 text-sm leading-relaxed italic">&ldquo;{s.approach}&rdquo;</p>
               </div>
             </div>
-            <div className="px-6 pb-6">
-              <p className="text-xs text-indigo-500 font-medium">{s.label} — available on request</p>
-            </div>
           </div>
         ))}
+      </section>
+
+      {/* Generated results */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-bold text-gray-900">Generated Results</h2>
+        <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <Image
+            src="/work/image-prompt-samples.png"
+            alt="AI-generated results for all three prompt samples"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+          />
+        </div>
+        <p className="text-xs text-gray-400">All images generated from the prompts above.</p>
       </section>
 
       <section className="space-y-3 pb-4">
