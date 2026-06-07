@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "MyFormsVault | chavacodes4u",
@@ -27,8 +27,9 @@ export default function MyFormsVault() {
   return (
     <CaseStudyLayout
       title="MyFormsVault"
-      label="Chrome Extension · Product Concept · Landing Page Copy"
-      summary="A browser extension concept that stores reusable personal form information locally — so you never retype the same details twice."
+      label="Full-Stack App · Chrome Extension · Landing Page"
+      summary="A live web app and Chrome extension for importing, organizing, and autofilling repeated forms — built with Next.js, Supabase, and a household vault for reusable family data."
+      liveUrl="https://www.myformsvault.com"
     >
       {/* Problem */}
       <section className="space-y-3">
@@ -69,9 +70,25 @@ export default function MyFormsVault() {
       {/* Screenshots */}
       <section className="space-y-4">
         <h2 className="text-xl font-bold text-gray-900">Screenshots</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
-          <ImagePlaceholder label="Landing page screenshot" />
-          <ImagePlaceholder label="Extension mockup / UI concept" />
+        <div className="grid sm:grid-cols-2 gap-4 items-start">
+          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm">
+            <Image
+              src="/work/myformsvault-landing.png"
+              alt="MyFormsVault landing page hero"
+              width={600}
+              height={900}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-indigo-100 shadow-sm">
+            <Image
+              src="/work/myformsvault-extension.png"
+              alt="MyFormsVault Chrome extension popup"
+              width={600}
+              height={480}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
