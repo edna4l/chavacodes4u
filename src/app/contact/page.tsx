@@ -23,10 +23,10 @@ export default function Contact() {
             <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
               Let&apos;s Talk
             </p>
-            <h1 className="text-4xl font-bold text-gray-900">Get in Touch</h1>
+            <h1 className="text-4xl font-bold text-gray-900">Tell Me What You&apos;re Building</h1>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Want help with your content, prompts, or website messaging? Tell me what
-              you&apos;re working on and I&apos;ll get back to you.
+              Need help with content, prompts, launch messaging, or making your idea look
+              real? Tell me what you&apos;re working on and I&apos;ll get back to you.
             </p>
           </div>
 
