@@ -153,11 +153,17 @@ export default function Home() {
 
         {/* ── Services preview ──────────────────────────────── */}
         <section className="py-10 space-y-10 border-t border-gray-100">
-          <div className="space-y-2">
+          <div className="space-y-3">
             <p className="text-xs font-semibold tracking-widest text-indigo-500 uppercase">
               Starter Offers
             </p>
-            <h2 className="text-3xl font-bold text-gray-900">Work With Me</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Tell Me What You&apos;re Building</h2>
+            <p className="text-gray-600 leading-relaxed max-w-xl">
+              Need launch content, a landing page review, better prompts, or help turning a messy idea into something clear?{" "}
+              <Link href="/contact" className="text-indigo-600 font-medium hover:underline">
+                Start here.
+              </Link>
+            </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {servicesPricing.map((s) => (
