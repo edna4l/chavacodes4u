@@ -214,7 +214,7 @@ export default function Home() {
             href="/contact"
             className="inline-flex items-center px-8 py-3.5 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
           >
-            Contact Me
+            Tell Me What You&apos;re Building
           </Link>
         </section>
       </div>
