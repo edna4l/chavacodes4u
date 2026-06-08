@@ -21,7 +21,7 @@ const services = [
 ];
 
 const servicesPricing = [
-  { name: "Content Starter Pack", price: "$35–$75", blurb: "Hooks, captions, and AI image prompts for your brand." },
+  { name: "Content Starter Pack", price: "$35–$75", blurb: "Walk away with 10 post ideas, 5 captions, and 3 AI image prompts you can use this week." },
   { name: "Landing Page Review", price: "$50–$100", blurb: "Clearer copy, better headlines, and a stronger CTA." },
   { name: "AI Visual Prompt Pack", price: "$35–$75", blurb: "10 detailed image prompts with style direction." },
   { name: "Launch Mini-Kit", price: "$100–$250", blurb: "Everything you need to launch: message, hooks, captions, and a 7-day plan." },
