@@ -95,7 +95,7 @@ export default function ContactForm() {
         disabled={state.submitting}
         className="w-full py-3 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {state.submitting ? "Sending…" : "Send Message"}
+        {state.submitting ? "Sending…" : "Send My Idea"}
       </button>
     </form>
   );
