@@ -4,7 +4,7 @@ const socials = [
   { label: "TikTok", href: "#" },
   { label: "Instagram", href: "#" },
   { label: "Facebook", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/edna-chavarria-chavacodes4u/" },
 ];
 
 export default function Footer() {
