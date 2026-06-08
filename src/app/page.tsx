@@ -143,7 +143,7 @@ export default function Home() {
               I turn ideas into content, prompts, websites, and launch materials that
               people can actually understand.
             </p>
-            <div className="flex justify-center gap-8 text-sm font-semibold text-indigo-700">
+            <div className="flex flex-col items-center gap-2 text-lg font-semibold text-indigo-700">
               <span>I can think.</span>
               <span>I can create.</span>
               <span>I can finish.</span>
