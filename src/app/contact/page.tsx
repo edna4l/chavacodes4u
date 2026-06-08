@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const socials = [
   { label: "TikTok", href: "#" },
-  { label: "Instagram", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/chavacodes4u/" },
   { label: "Facebook", href: "#" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/edna-chavarria-chavacodes4u/" },
 ];
