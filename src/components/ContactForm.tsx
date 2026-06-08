@@ -52,7 +52,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="need" className="block text-sm font-medium text-gray-700 mb-1">
-          What do you need help with?
+          What are you building or trying to create?
         </label>
         <textarea
           id="need"
