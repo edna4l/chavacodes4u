@@ -55,7 +55,7 @@ export default function Home() {
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:border-indigo-400 hover:text-indigo-600 transition-colors"
               >
-                Work With Me
+                Start Here
               </Link>
             </div>
             <div className="pt-2 pl-5 border-l-4 border-indigo-200">
