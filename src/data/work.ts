@@ -9,6 +9,15 @@ export interface WorkItem {
 
 export const work: WorkItem[] = [
   {
+    slug: "got-junk-website",
+    title: "Got Junk",
+    label: "Full-Stack Website · Next.js Development · SEO · Backend Integration",
+    summary:
+      "A live local junk-removal business site rebuilt from static HTML into a full Next.js app with a working contact-form backend, SEO, and uptime monitoring.",
+    featured: true,
+    tags: ["Next.js", "Full-Stack Development", "SEO", "Deployment"],
+  },
+  {
     slug: "violets-and-vibes",
     title: "Violets & Vibes",
     label: "Founder Project · Website · Brand Strategy · AI Content",
